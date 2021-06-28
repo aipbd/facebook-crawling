@@ -31,6 +31,7 @@ def hidden(browser_options=BROWSER_OPTIONS.FIREFOX):
         browser_options.add_argument('--incognito')
         browser_options.add_argument('--disable-blink-features=AutomationControlled')
     elif type(browser_options) == FirefoxOptions:
+        # browser_options.binary_location = "geckodriver"
         browser_options.add_argument('--private') 
         browser_options.set_preference("dom.webdriver.enabled", False)
         browser_options.set_preference('useAutomationExtension', False)

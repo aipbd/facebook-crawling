@@ -3,19 +3,20 @@ import page
 import re
 import json
 
-PAGE_URL = 'https://www.facebook.com/KTXDHQGConfessions/'
-TOR_PATH = browser.TOR_PATH.NONE
+PAGE_URL = 'https://www.facebook.com/Aleshamart.AML/'
+# PAGE_URL = 'https://www.facebook.com/Aleshamart.AML/L'
+TOR_PATH = browser.TOR_PATH.MAC
 BROWSER_OPTIONS = browser.BROWSER_OPTIONS.FIREFOX
 
-USE_PROXY = True
-PRIVATE = True
+USE_PROXY = False
+PRIVATE = False
 SPEED_UP = True
 HEADLESS = False
 
-SCROLL_DOWN = 7
-FILTER_CMTS_BY = page.FILTER_CMTS.MOST_RELEVANT
+SCROLL_DOWN = 1
+FILTER_CMTS_BY = page.FILTER_CMTS.ALL_COMMENTS
 VIEW_MORE_CMTS = 2
-VIEW_MORE_REPLIES = 2
+VIEW_MORE_REPLIES = 1
 
 
 def get_child_attribute(element, selector, attr):
